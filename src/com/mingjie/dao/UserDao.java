@@ -3,9 +3,9 @@ package com.mingjie.dao;
 import com.mingjie.domain.User;
 import com.mingjie.utils.DataSourceUtils;
 import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import javax.xml.crypto.Data;
 import java.sql.SQLException;
 
 /**
@@ -39,5 +39,14 @@ public class UserDao {
         Long row = (Long) runner.query(sql, new ScalarHandler(), username);
 
         return row;
+    }
+
+    public User login(String username, String password) throws SQLException {
+
+        QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
+
+        String sql = "select * from user where username=? and password=?";
+        User user = runner.query(sql, new BeanHandler<User>(User.class), username, password);
+        return user;
     }
 }

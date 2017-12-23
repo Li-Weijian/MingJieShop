@@ -48,4 +48,19 @@ public class UserService {
 
         return row > 0?true:false;
     }
+
+    //用户登录
+    public User login(String username, String password) {
+
+        UserDao dao = new UserDao();
+        User user = null;
+
+        try {
+            user = dao.login(username,password);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return user;
+    }
 }
