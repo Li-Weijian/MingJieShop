@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.net.URLEncoder;
 
 /**
  * @Author:Liweijian
@@ -25,6 +26,7 @@ public class AutoLoginFilter implements Filter {
         HttpSession session = httpReq.getSession();
         String username = null;
         String password = null;
+        httpReq.setCharacterEncoding("UTF-8");
 
         //获取Cookies
         Cookie[] cookies = httpReq.getCookies();
@@ -34,6 +36,8 @@ public class AutoLoginFilter implements Filter {
             for (Cookie cookie : cookies){
                 if (cookie.getName().equals("cookie_username")){
                     username = cookie.getValue();
+                    //恢复中文用户名
+                    username = URLEncoder.encode(username,"UTF-8");
                 }
                 if (cookie.getName().equals("cookie_password")){
                     password = cookie.getValue();

@@ -36,6 +36,12 @@ font {
 	padding-right: 17px;
 }
 </style>
+ <script type="text/javascript">
+     //更换验证码
+     function changeImg() {
+         $("#checkImg").attr("src","${pageContext.request.contextPath}/checkImg?checkImg = ${checkcode_session}"+"&"+new Date());
+     }
+ </script>
 
 </head>
 <body>
@@ -74,10 +80,10 @@ font {
 						<div class="form-group">
 							<label for="inputPassword3" class="col-sm-2 control-label">验证码</label>
 							<div class="col-sm-3">
-								<input type="text" class="form-control" id="inputPassword3" placeholder="请输入验证码">
+								<input type="text" class="form-control" id="inputPassword3" name="checkCode" placeholder="请输入验证码">
 							</div>
 							<div class="col-sm-3">
-								<img src="./image/captcha.jhtml" />
+								<img src="${pageContext.request.contextPath}/checkImg" id="checkImg" onclick="changeImg()"/>
 							</div>
 						</div>
 						<div class="form-group">

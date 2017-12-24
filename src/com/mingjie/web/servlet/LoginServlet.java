@@ -2,6 +2,7 @@ package com.mingjie.web.servlet;
 
 import com.mingjie.domain.User;
 import com.mingjie.service.UserService;
+import com.mingjie.utils.CommonsUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -23,29 +24,37 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String autoLogin = request.getParameter("autoLogin");
+        String checkCode = request.getParameter("checkCode");
         HttpSession session = request.getSession();
-        System.out.println(autoLogin);
+        User user = null;
+        String checkcode_session = (String) session.getAttribute("checkcode_session");
 
-        UserService service = new UserService();
-        User user = service.login(username,password);
+        //校验验证码
+        if (CommonsUtils.checkCode(checkCode,checkcode_session)){
+            UserService service = new UserService();
+            user = service.login(username,password);
 
-        if (user!=null){
-            //勾选自动登录
-            if (autoLogin != null){
-                //创建Cookie
-                Cookie cookie_username = new Cookie("cookie_username",username);
-                Cookie cookie_password = new Cookie("cookie_password", password);
-                //设置持久化时间
-                cookie_username.setMaxAge(60*60);
-                cookie_password.setMaxAge(60*60);
-                //添加Cookie
-                response.addCookie(cookie_username);
-                response.addCookie(cookie_password);
+            if (user!=null){
+                //勾选自动登录
+                if (autoLogin != null){
+                    //创建Cookie
+                    Cookie cookie_username = new Cookie("cookie_username",username);
+                    Cookie cookie_password = new Cookie("cookie_password", password);
+                    //设置持久化时间
+                    cookie_username.setMaxAge(60*60);
+                    cookie_password.setMaxAge(60*60);
+                    //添加Cookie
+                    response.addCookie(cookie_username);
+                    response.addCookie(cookie_password);
+                }
+                session.setAttribute("user",user);
+                response.sendRedirect(request.getContextPath()+"/index.jsp");
+            }else {
+                request.setAttribute("loginInfo","用户名或密码错误");
+                request.getRequestDispatcher(request.getContextPath()+"/login.jsp").forward(request,response);
             }
-            session.setAttribute("user",user);
-            response.sendRedirect(request.getContextPath()+"/index.jsp");
         }else {
-            request.setAttribute("loginInfo","用户名或密码错误");
+            request.setAttribute("loginInfo","验证码错误");
             request.getRequestDispatcher(request.getContextPath()+"/login.jsp").forward(request,response);
         }
     }

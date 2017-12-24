@@ -30,7 +30,6 @@ public class RegisterServlet extends javax.servlet.http.HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         //封装User
         Map<String, String[]> map = request.getParameterMap();
         User user = new User();
