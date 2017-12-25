@@ -6,10 +6,10 @@
     $(function () {
         var content = "";
         $.post(
-            "${pageContext.request.contextPath}/categoryList",
+            "${pageContext.request.contextPath}/product?method=categoryList",
             function (data) {
                 for (var i = 0; i < data.length; i++) {
-                    content += "<li><a href='${pageContext.request.contextPath}/productByCid?cid="+data[i].cid+"'>" + data[i].cname + "</a></li>";
+                    content += "<li><a href='${pageContext.request.contextPath}/product?method=productByCid&cid="+data[i].cid+"'>" + data[i].cname + "</a></li>";
                 }
                 $("#category").html(content);
             },
@@ -33,7 +33,7 @@
             </c:if>
             <c:if test="${!empty user}">
                 <li><a href="#">${user.username},欢迎您</a></li>
-                <li><a href="${pageContext.request.contextPath}/logout">退出</a></li>
+                <li><a href="${pageContext.request.contextPath}/user?method=logout">退出</a></li>
             </c:if>
 
             <li><a href="cart.jsp">购物车</a></li>

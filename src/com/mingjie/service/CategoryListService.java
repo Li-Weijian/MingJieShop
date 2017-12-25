@@ -2,7 +2,6 @@ package com.mingjie.service;
 
 import com.mingjie.dao.CategoryListDao;
 import com.mingjie.domain.Category;
-import com.mingjie.web.servlet.CategoryListServlet;
 
 import java.sql.SQLException;
 import java.util.List;

@@ -11,7 +11,7 @@
 </head>
 <body>
 <%
-    request.getRequestDispatcher("/index").forward(request,response);
+    request.getRequestDispatcher("/product?method=index").forward(request,response);
 %>
 
 </body>

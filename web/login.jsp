@@ -64,7 +64,7 @@ font {
 					<div>
                         <span style="color: red">${loginInfo}</span>
                     </div>
-					<form class="form-horizontal" method="post" action="${pageContext.request.contextPath}/login">
+					<form class="form-horizontal" method="post" action="${pageContext.request.contextPath}/user?method=login">
 						<div class="form-group">
 							<label for="username" class="col-sm-2 control-label">用户名</label>
 							<div class="col-sm-6">

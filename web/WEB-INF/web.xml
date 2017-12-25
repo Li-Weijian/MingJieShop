@@ -16,50 +16,31 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-
     <servlet>
-        <servlet-name>RegisterServlet</servlet-name>
-        <servlet-class>com.mingjie.web.servlet.RegisterServlet</servlet-class>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>com.mingjie.web.servlet.ProductServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>RegisterServlet</servlet-name>
-        <url-pattern>/register</url-pattern>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/product</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>ActiveServlet</servlet-name>
-        <servlet-class>com.mingjie.web.servlet.ActiveServlet</servlet-class>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.mingjie.web.servlet.UserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ActiveServlet</servlet-name>
-        <url-pattern>/active</url-pattern>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/user</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>CheckUsernameServlet</servlet-name>
-        <servlet-class>com.mingjie.web.servlet.CheckUsernameServlet</servlet-class>
+        <servlet-name>BaseServlet</servlet-name>
+        <servlet-class>com.mingjie.web.servlet.BaseServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>CheckUsernameServlet</servlet-name>
-        <url-pattern>/checkUsername</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>com.mingjie.web.servlet.LoginServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/login</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>LogoutServlet</servlet-name>
-        <servlet-class>com.mingjie.web.servlet.LogoutServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>LogoutServlet</servlet-name>
-        <url-pattern>/logout</url-pattern>
+        <servlet-name>BaseServlet</servlet-name>
+        <url-pattern>/base</url-pattern>
     </servlet-mapping>
     
     <servlet>
@@ -71,39 +52,4 @@
         <url-pattern>/checkImg</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>IndexServlet</servlet-name>
-        <servlet-class>com.mingjie.web.servlet.IndexServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>IndexServlet</servlet-name>
-        <url-pattern>/index</url-pattern>
-    </servlet-mapping>
-    
-    <servlet>
-        <servlet-name>CategoryListServlet</servlet-name>
-        <servlet-class>com.mingjie.web.servlet.CategoryListServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>CategoryListServlet</servlet-name>
-        <url-pattern>/categoryList</url-pattern>
-    </servlet-mapping>
-    
-    <servlet>
-        <servlet-name>ProductByCidServlet</servlet-name>
-        <servlet-class>com.mingjie.web.servlet.ProductByCidServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ProductByCidServlet</servlet-name>
-        <url-pattern>/productByCid</url-pattern>
-    </servlet-mapping>
-    
-    <servlet>
-        <servlet-name>ProductInfoServlet</servlet-name>
-        <servlet-class>com.mingjie.web.servlet.ProductInfoServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ProductInfoServlet</servlet-name>
-        <url-pattern>/productInfo</url-pattern>
-    </servlet-mapping>
 </web-app>

@@ -10,8 +10,8 @@ import org.apache.commons.beanutils.Converter;
 
 import javax.mail.MessagingException;
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.*;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.text.ParseException;
@@ -21,15 +21,84 @@ import java.util.Map;
 
 /**
  * @Author:Liweijian
- * @Description: 注册Servlet
- * @Date:Create in 16:34 2017/12/23 0023
+ * @Description: 用户相关功能的集成模块
+ * @Date:Create in 17:11 2017/12/25 0025
  */
-public class RegisterServlet extends javax.servlet.http.HttpServlet {
+@WebServlet(name = "UserServlet")
+public class UserServlet extends BaseServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    }
+
+    //用户激活
+    public void active(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String activeCode = request.getParameter("activeCode");
+        UserService service = new UserService();
+        service.active(activeCode);
+        response.sendRedirect(request.getContextPath()+"/login.jsp");
+    }
+
+    //检查用户名是否存在
+    public void checkUsername(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String username = request.getParameter("username");
+        UserService service = new UserService();
+        boolean isExiets = service.checkUsername(username);
+        response.getWriter().write("{\"isExiets\":"+isExiets+"}");
+    }
+
+    //登录
+    public void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        String autoLogin = request.getParameter("autoLogin");
+        String checkCode = request.getParameter("checkCode");
+        HttpSession session = request.getSession();
+        User user = null;
+        String checkcode_session = (String) session.getAttribute("checkcode_session");
+
+        //校验验证码
+        if (CommonsUtils.checkCode(checkCode,checkcode_session)){
+            UserService service = new UserService();
+            user = service.login(username,password);
+
+            if (user!=null){
+                //勾选自动登录
+                if (autoLogin != null){
+                    //创建Cookie
+                    Cookie cookie_username = new Cookie("cookie_username",username);
+                    Cookie cookie_password = new Cookie("cookie_password", password);
+                    //设置持久化时间
+                    cookie_username.setMaxAge(60*60);
+                    cookie_password.setMaxAge(60*60);
+                    //添加Cookie
+                    response.addCookie(cookie_username);
+                    response.addCookie(cookie_password);
+                }
+                session.setAttribute("user",user);
+                response.sendRedirect(request.getContextPath()+"/index.jsp");
+            }else {
+                request.setAttribute("loginInfo","用户名或密码错误");
+                request.getRequestDispatcher(request.getContextPath()+"/login.jsp").forward(request,response);
+            }
+        }else {
+            request.setAttribute("loginInfo","验证码错误");
+            request.getRequestDispatcher(request.getContextPath()+"/login.jsp").forward(request,response);
+        }
+    }
+
+    //用户登出
+    public void logout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession();
+        session.invalidate();
+        response.sendRedirect(request.getContextPath() + "/login.jsp");
+    }
+
+    //注册
+    public void register(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String checkCode = request.getParameter("checkCode");
         String checkcode_session = (String) request.getSession().getAttribute("checkcode_session");
@@ -87,8 +156,8 @@ public class RegisterServlet extends javax.servlet.http.HttpServlet {
             if (isSuccess){
                 //发送激活邮件
                 String emailMsg = "恭喜您注册成功，请点击下面的连接进行激活账户"
-                        + "<a href='http://localhost:8080/active?activeCode="+activeCode+"'>"
-                        + "http://localhost:8080/active?activeCode="+activeCode+"</a>";
+                        + "<a href='http://localhost:8080/user?method=active&activeCode="+activeCode+"'>"
+                        + "http://localhost:8080/user?method=active&activeCode="+activeCode+"</a>";
                 try {
                     MailUtils.sendMail(user.getEmail(),emailMsg);
                 } catch (MessagingException e) {
@@ -105,5 +174,7 @@ public class RegisterServlet extends javax.servlet.http.HttpServlet {
             request.getRequestDispatcher(request.getContextPath()+"/register.jsp").forward(request,response);
         }
 
+
     }
+
 }
