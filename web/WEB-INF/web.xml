@@ -97,4 +97,13 @@
         <servlet-name>ProductByCidServlet</servlet-name>
         <url-pattern>/productByCid</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ProductInfoServlet</servlet-name>
+        <servlet-class>com.mingjie.web.servlet.ProductInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductInfoServlet</servlet-name>
+        <url-pattern>/productInfo</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -42,11 +42,11 @@
 
     <c:forEach items="${pageBean.list}" var="pro">
         <div class="col-md-2" style="height: 250px;">
-            <a href="product_info.htm">
+            <a href="${pageContext.request.contextPath}/productInfo?pid=${pro.pid}">
                 <img src="${pageContext.request.contextPath}/${pro.pimage}" width="170" height="170" style="display: inline-block;">
             </a>
             <p>
-                <a href="product_info.html" style='color: green'>${pro.pname}</a>
+                <a href="${pageContext.request.contextPath}/productInfo?pid=${pro.pid}" style='color: green'>${pro.pname}</a>
             </p>
             <p>
                 <font color="#FF0000">商城价：&yen;${pro.shop_price}</font>
@@ -106,17 +106,6 @@
               </li>
           </c:if>
 
-               <%-- <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">6</a></li>
-        <li><a href="#">7</a></li>
-        <li><a href="#">8</a></li>
-        <li><a href="#">9</a></li>
-        <li><a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span></a></li>--%>
     </ul>
 </div>
 <!-- 分页结束 -->

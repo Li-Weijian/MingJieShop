@@ -3,9 +3,11 @@ package com.mingjie.dao;
 import com.mingjie.domain.Product;
 import com.mingjie.utils.DataSourceUtils;
 import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
+import javax.xml.crypto.Data;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -42,5 +44,12 @@ public class ProductDao {
         String sql = "select count(*) from product where cid = ?";
         Long row = (Long) runner.query(sql, new ScalarHandler(), cid);
         return row.intValue();
+    }
+
+    public Product findProductByPid(String pid) throws SQLException {
+        QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
+        String sql = "select * from product where pid = ?";
+        Product product = runner.query(sql, new BeanHandler<Product>(Product.class), pid);
+        return product;
     }
 }

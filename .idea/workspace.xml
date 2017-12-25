@@ -6,16 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="024ecde9-64fb-4799-b3fe-ab2802ac19a1" name="Default" comment="实现类别、按类别显示商品以及分页功能">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/utils/CommonsUtils.class" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/utils/CommonsUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/web/servlet/RegisterServlet$1.class" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/web/servlet/RegisterServlet$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/web/servlet/RegisterServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/web/servlet/RegisterServlet.class" />
+    <list default="true" id="024ecde9-64fb-4799-b3fe-ab2802ac19a1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductInfoServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/product_list.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/product_list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/register.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mingjie/dao/ProductDao.java" afterPath="$PROJECT_DIR$/src/com/mingjie/dao/ProductDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mingjie/service/ProductService.java" afterPath="$PROJECT_DIR$/src/com/mingjie/service/ProductService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/product_info.jsp" afterPath="$PROJECT_DIR$/web/product_info.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/product_list.jsp" afterPath="$PROJECT_DIR$/web/product_list.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,59 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AutoLoginFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/filter/AutoLoginFilter.java">
+      <file leaf-file-name="product_info.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/product_info.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="326">
+              <caret line="91" column="22" lean-forward="true" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="11" column="77" lean-forward="false" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mingjie/domain/PageBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding>
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product_list.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product_list.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/product_list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="102" column="121" lean-forward="false" selection-start-line="102" selection-start-column="121" selection-end-line="102" selection-end-column="121" />
-              <folding>
-                <element signature="e#2471#2478#1#HTML" expanded="true" />
-                <element signature="e#2779#2786#1#HTML" expanded="true" />
-                <element signature="e#3569#3576#1#HTML" expanded="true" />
-                <element signature="e#3892#3899#1#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductByCidServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductByCidServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state relative-caret-position="480">
+              <caret line="48" column="76" lean-forward="false" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -88,8 +48,8 @@
       <file leaf-file-name="ProductDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mingjie/dao/ProductDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="43" column="30" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+            <state relative-caret-position="266">
+              <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,11 +57,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ProductInfoServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductInfoServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="541">
+              <caret line="30" column="111" lean-forward="false" selection-start-line="30" selection-start-column="111" selection-end-line="30" selection-end-column="111" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mingjie/service/ProductService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2190">
-              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="386">
+              <caret line="91" column="23" lean-forward="false" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,8 +82,8 @@
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2910">
-              <caret line="97" column="34" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="34" />
+            <state relative-caret-position="811">
+              <caret line="106" column="33" lean-forward="false" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -168,13 +138,15 @@
         <option value="$PROJECT_DIR$/src/com/mingjie/dao/CategoryListDao.java" />
         <option value="$PROJECT_DIR$/src/com/mingjie/service/CategoryListService.java" />
         <option value="$PROJECT_DIR$/src/com/mingjie/web/servlet/CategoryListServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/header.jsp" />
         <option value="$PROJECT_DIR$/src/com/mingjie/domain/PageBean.java" />
-        <option value="$PROJECT_DIR$/src/com/mingjie/dao/ProductDao.java" />
         <option value="$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductByCidServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/mingjie/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/product_list.jsp" />
+        <option value="$PROJECT_DIR$/src/com/mingjie/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductInfoServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/mingjie/dao/ProductDao.java" />
+        <option value="$PROJECT_DIR$/web/product_info.jsp" />
       </list>
     </option>
   </component>
@@ -502,7 +474,7 @@
       <workItem from="1514078425468" duration="6174000" />
       <workItem from="1514116884919" duration="11446000" />
       <workItem from="1514129164126" duration="4664000" />
-      <workItem from="1514166466011" duration="773000" />
+      <workItem from="1514166466011" duration="2048000" />
     </task>
     <task id="LOCAL-00001" summary="实现登录功能">
       <created>1514042884211</created>
@@ -532,11 +504,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514167210368</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="实现类别、按类别显示商品以及分页功能">
+      <created>1514167244724</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1514167244724</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46385000" />
+    <option name="totallyTimeSpent" value="47660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -552,7 +531,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -577,6 +556,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -594,22 +583,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="85" column="101" lean-forward="false" selection-start-line="85" selection-start-column="101" selection-end-line="85" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="35" column="68" lean-forward="false" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/RegisterServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -975,34 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mingjie/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mingjie/dao/ProductDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="43" column="30" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2910">
-          <caret line="97" column="34" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductByCidServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -1011,16 +956,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="811">
+          <caret line="106" column="33" lean-forward="false" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mingjie/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="91" column="23" lean-forward="false" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="30" column="111" lean-forward="false" selection-start-line="30" selection-start-column="111" selection-end-line="30" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mingjie/dao/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/product_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="102" column="121" lean-forward="false" selection-start-line="102" selection-start-column="121" selection-end-line="102" selection-end-column="121" />
-          <folding>
-            <element signature="e#2471#2478#1#HTML" expanded="true" />
-            <element signature="e#2779#2786#1#HTML" expanded="true" />
-            <element signature="e#3569#3576#1#HTML" expanded="true" />
-            <element signature="e#3892#3899#1#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="480">
+          <caret line="48" column="76" lean-forward="false" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/product_info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="91" column="22" lean-forward="true" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

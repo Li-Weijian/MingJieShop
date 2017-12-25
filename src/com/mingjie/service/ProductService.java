@@ -79,4 +79,16 @@ public class ProductService {
 
         return pageBean;
     }
+
+    public Product findProductByPid(String pid) {
+        ProductDao dao = new ProductDao();
+        Product product = null;
+        try {
+              product = dao.findProductByPid(pid);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return product;
+    }
 }
