@@ -6,39 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="024ecde9-64fb-4799-b3fe-ab2802ac19a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/gson-2.2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/dao/CategoryListDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/dao/ProductDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/domain/Category.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/domain/PageBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/domain/Product.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/service/CategoryListService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/service/ProductService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/web/servlet/CategoryListServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/web/servlet/IndexServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductByCidServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/default.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cn/itcast/estore/web/servlet/CheckImgServlet.java" afterPath="" />
+    <list default="true" id="024ecde9-64fb-4799-b3fe-ab2802ac19a1" name="Default" comment="实现类别、按类别显示商品以及分页功能">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/utils/CommonsUtils.class" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/utils/CommonsUtils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/web/servlet/RegisterServlet$1.class" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/web/servlet/RegisterServlet$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/web/servlet/RegisterServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/web/servlet/RegisterServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/mingjie/utils/CommonsUtils.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/mingjie/utils/CommonsUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/mingjie/web/servlet/RegisterServlet$1.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/mingjie/web/servlet/RegisterServlet$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/mingjie/web/servlet/RegisterServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/mingjie/web/servlet/RegisterServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/c3p0_0_9_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/c3p0_0_9_1_2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/product_list.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/product_list.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/register.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mingjie/web/servlet/RegisterServlet.java" afterPath="$PROJECT_DIR$/src/com/mingjie/web/servlet/RegisterServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/header.jsp" afterPath="$PROJECT_DIR$/web/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/product_list.jsp" afterPath="$PROJECT_DIR$/web/product_list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/register.jsp" afterPath="$PROJECT_DIR$/web/register.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -525,7 +502,7 @@
       <workItem from="1514078425468" duration="6174000" />
       <workItem from="1514116884919" duration="11446000" />
       <workItem from="1514129164126" duration="4664000" />
-      <workItem from="1514166466011" duration="669000" />
+      <workItem from="1514166466011" duration="773000" />
     </task>
     <task id="LOCAL-00001" summary="实现登录功能">
       <created>1514042884211</created>
@@ -548,11 +525,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514081740246</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="实现类别、按类别显示商品以及分页功能">
+      <created>1514167210368</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1514167210368</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46281000" />
+    <option name="totallyTimeSpent" value="46385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -600,7 +584,8 @@
     <MESSAGE value="实现登录功能" />
     <MESSAGE value="实现自动登录功能" />
     <MESSAGE value="实现用户退出、验证码登录功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现用户退出、验证码登录功能" />
+    <MESSAGE value="实现类别、按类别显示商品以及分页功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现类别、按类别显示商品以及分页功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
