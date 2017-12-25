@@ -64,6 +64,7 @@ font {
         }
     );
 
+
     //校验规则 -- validate
     $(function () {
        $("#myform").validate({
@@ -86,7 +87,11 @@ font {
                },
                sex:{
                    required:true
+               },
+               checkCode:{
+                   required:true,
                }
+
 
            },
            messages:{
@@ -110,6 +115,12 @@ font {
 
        });
     });
+
+    //更换验证码
+    function changeImg() {
+        $("#checkImg").attr("src","${pageContext.request.contextPath}/checkImg?checkImg = ${checkcode_session}"+"&"+new Date());
+    }
+
 
 </script>
 </head>
@@ -182,8 +193,9 @@ font {
 
 						</div>
 						<div class="col-sm-2">
-							<img src="./image/captcha.jhtml" />
+							<img src="${pageContext.request.contextPath}/checkImg" id="checkImg" onclick="changeImg()"/>
 						</div>
+                        <div><span style="color: red;">${checkResult}</span></div>
 
 					</div>
 
