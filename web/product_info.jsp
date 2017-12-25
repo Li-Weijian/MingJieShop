@@ -77,6 +77,7 @@ body {
 							</a> &nbsp;收藏商品
 						</div>
 					</div>
+                    <div><a href="${pageContext.request.contextPath}/productByCid?cid=${cid}&currentPage=${currentPage}">返回商品列表</a> </div>
 				</div>
 			</div>
 			<div class="clear"></div>

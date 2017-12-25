@@ -6,10 +6,12 @@ import com.mingjie.service.ProductService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -33,6 +35,26 @@ public class ProductByCidServlet extends HttpServlet {
         ProductService service = new ProductService();
         PageBean<Product> pageBean = service.findProductByCid(cid,currentPage,currentCount);
 
+        //定义一个记录历史商品的集合类
+        List<Product> historyProductList = new ArrayList<>();
+
+        //获取Cookies  -- 将Cookies存入集合再添加到request域
+        Cookie[] cookies = request.getCookies();
+        if (cookies!=null){
+            for (Cookie cookie: cookies){
+                if ("pids".equals(cookie.getName())){
+                    String pids = cookie.getValue(); //3-2-1
+                    String[] split = pids.split("-");   //3，2，1
+                    //去数据库查询对应的商品
+                    for (int i = 0; i < split.length; i++){
+                        Product pro = service.findProductByPid(split[i]);
+                        historyProductList.add(pro);  //添加到集合中
+                    }
+                }
+            }
+        }
+
+        request.setAttribute("historyProductList",historyProductList);      //将历史记录集合放到域中
         request.setAttribute("cid",cid);
         request.setAttribute("pageBean",pageBean);
         request.getRequestDispatcher(request.getContextPath() + "/product_list.jsp").forward(request,response);
