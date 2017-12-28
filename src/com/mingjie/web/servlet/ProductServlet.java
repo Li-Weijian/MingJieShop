@@ -229,14 +229,29 @@ public class ProductServlet extends BaseServlet {
         if (cartItem.containsKey(pid)){
             CartItem removeCartItem = cartItem.remove(pid);
             double subTotal = removeCartItem.getSubTotal();
-            System.out.println(subTotal);
-            //修改购物车总金额
+            //修改购物车总 金额
             cart.setTotal(cart.getTotal() - subTotal);
             session.setAttribute("cart",cart);
         }
 
         request.getRequestDispatcher(request.getContextPath()+"/cart.jsp").forward(request,response);
-
     }
+
+    //清空购物车
+    public void clearCart(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        HttpSession session = request.getSession();
+        session.invalidate();
+
+        request.getRequestDispatcher(request.getContextPath()+"/cart.jsp").forward(request,response);
+    }
+
+
+
+
+
+
+
+
+
 
 }

@@ -8,8 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="024ecde9-64fb-4799-b3fe-ab2802ac19a1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/cart.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/cart.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductServlet.java" afterPath="$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/cart.jsp" afterPath="$PROJECT_DIR$/web/cart.jsp" />
     </list>
@@ -26,8 +24,8 @@
       <file leaf-file-name="cart.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/cart.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="72" column="110" lean-forward="true" selection-start-line="72" selection-start-column="99" selection-end-line="72" selection-end-column="110" />
+            <state relative-caret-position="511">
+              <caret line="87" column="88" lean-forward="false" selection-start-line="87" selection-start-column="88" selection-end-line="87" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -46,8 +44,8 @@
       <file leaf-file-name="ProductServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="233" column="47" lean-forward="false" selection-start-line="233" selection-start-column="47" selection-end-line="233" selection-end-column="47" />
+            <state relative-caret-position="361">
+              <caret line="239" column="11" lean-forward="false" selection-start-line="239" selection-start-column="11" selection-end-line="239" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -435,7 +433,7 @@
       <workItem from="1514186405499" duration="327000" />
       <workItem from="1514186865656" duration="5909000" />
       <workItem from="1514194947477" duration="598000" />
-      <workItem from="1514467995752" duration="7243000" />
+      <workItem from="1514467995752" duration="7694000" />
     </task>
     <task id="LOCAL-00001" summary="实现登录功能">
       <created>1514042884211</created>
@@ -500,11 +498,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514474179805</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="实现购物车删除单个商品功能">
+      <created>1514475275295</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1514475275295</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65724000" />
+    <option name="totallyTimeSpent" value="66175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -567,7 +572,8 @@
     <MESSAGE value="完成商品浏览历史记录功能" />
     <MESSAGE value="完成功能模块的Servlet抽取，是代码更简洁" />
     <MESSAGE value="实现购物车功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现购物车功能" />
+    <MESSAGE value="实现购物车删除单个商品功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现购物车删除单个商品功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -576,14 +582,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2850">
@@ -874,10 +872,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/order_info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-990">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/cart.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="72" column="110" lean-forward="true" selection-start-line="72" selection-start-column="99" selection-end-line="72" selection-end-column="110" />
+        <state relative-caret-position="511">
+          <caret line="87" column="88" lean-forward="false" selection-start-line="87" selection-start-column="88" selection-end-line="87" selection-end-column="88" />
           <folding />
         </state>
       </provider>
@@ -892,8 +898,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="233" column="47" lean-forward="false" selection-start-line="233" selection-start-column="47" selection-end-line="233" selection-end-column="47" />
+        <state relative-caret-position="361">
+          <caret line="239" column="11" lean-forward="false" selection-start-line="239" selection-start-column="11" selection-end-line="239" selection-end-column="11" />
           <folding />
         </state>
       </provider>
