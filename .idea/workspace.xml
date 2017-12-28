@@ -7,16 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="024ecde9-64fb-4799-b3fe-ab2802ac19a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/domain/Cart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/domain/CartItem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/product_info.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/product_info.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/register.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/cart.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/cart.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductServlet.java" afterPath="$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/cart.jsp" afterPath="$PROJECT_DIR$/web/cart.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/header.jsp" afterPath="$PROJECT_DIR$/web/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/product_info.jsp" afterPath="$PROJECT_DIR$/web/product_info.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,60 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Cart.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mingjie/domain/Cart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#363#364#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cart.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/cart.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="85" column="66" lean-forward="false" selection-start-line="85" selection-start-column="66" selection-end-line="85" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CartItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mingjie/domain/CartItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="e#376#377#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="57" column="92" lean-forward="false" selection-start-line="57" selection-start-column="92" selection-end-line="57" selection-end-column="92" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3090">
-              <caret line="115" column="100" lean-forward="false" selection-start-line="115" selection-start-column="100" selection-end-line="115" selection-end-column="100" />
+            <state relative-caret-position="390">
+              <caret line="72" column="110" lean-forward="true" selection-start-line="72" selection-start-column="99" selection-end-line="72" selection-end-column="110" />
               <folding />
             </state>
           </provider>
@@ -97,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductServlet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProductServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="214" column="0" lean-forward="false" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
+            <state relative-caret-position="356">
+              <caret line="233" column="47" lean-forward="false" selection-start-line="233" selection-start-column="47" selection-end-line="233" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -168,9 +114,9 @@
         <option value="$PROJECT_DIR$/web/product_info.jsp" />
         <option value="$PROJECT_DIR$/src/com/mingjie/domain/CartItem.java" />
         <option value="$PROJECT_DIR$/src/com/mingjie/domain/Cart.java" />
-        <option value="$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductServlet.java" />
-        <option value="$PROJECT_DIR$/web/cart.jsp" />
         <option value="$PROJECT_DIR$/web/header.jsp" />
+        <option value="$PROJECT_DIR$/web/cart.jsp" />
+        <option value="$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductServlet.java" />
       </list>
     </option>
   </component>
@@ -489,7 +435,7 @@
       <workItem from="1514186405499" duration="327000" />
       <workItem from="1514186865656" duration="5909000" />
       <workItem from="1514194947477" duration="598000" />
-      <workItem from="1514467995752" duration="6152000" />
+      <workItem from="1514467995752" duration="7243000" />
     </task>
     <task id="LOCAL-00001" summary="实现登录功能">
       <created>1514042884211</created>
@@ -547,11 +493,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514194268923</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="实现购物车功能">
+      <created>1514474179804</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1514474179805</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64633000" />
+    <option name="totallyTimeSpent" value="65724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -613,7 +566,8 @@
     <MESSAGE value="实现商品详情页功能" />
     <MESSAGE value="完成商品浏览历史记录功能" />
     <MESSAGE value="完成功能模块的Servlet抽取，是代码更简洁" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成功能模块的Servlet抽取，是代码更简洁" />
+    <MESSAGE value="实现购物车功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现购物车功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -893,10 +847,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/cart.jsp">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="85" column="66" lean-forward="false" selection-start-line="85" selection-start-column="66" selection-end-line="85" selection-end-column="66" />
+        <state relative-caret-position="3090">
+          <caret line="115" column="100" lean-forward="false" selection-start-line="115" selection-start-column="100" selection-end-line="115" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="57" column="92" lean-forward="false" selection-start-line="57" selection-start-column="92" selection-end-line="57" selection-end-column="92" />
           <folding />
         </state>
       </provider>
@@ -912,6 +874,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/cart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="72" column="110" lean-forward="true" selection-start-line="72" selection-start-column="99" selection-end-line="72" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/product_info.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -922,24 +892,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="214" column="0" lean-forward="false" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3090">
-          <caret line="115" column="100" lean-forward="false" selection-start-line="115" selection-start-column="100" selection-end-line="115" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="57" column="92" lean-forward="false" selection-start-line="57" selection-start-column="92" selection-end-line="57" selection-end-column="92" />
+        <state relative-caret-position="356">
+          <caret line="233" column="47" lean-forward="false" selection-start-line="233" selection-start-column="47" selection-end-line="233" selection-end-column="47" />
           <folding />
         </state>
       </provider>

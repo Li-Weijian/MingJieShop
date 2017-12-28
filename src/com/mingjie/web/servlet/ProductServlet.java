@@ -215,7 +215,27 @@ public class ProductServlet extends BaseServlet {
         //添加到session
         session.setAttribute("cart",cart);
         response.sendRedirect(request.getContextPath()+"/cart.jsp");
+    }
 
+    //删除购物车中的单件商品
+    public void delCartItem(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+
+        String pid = request.getParameter("pid");
+        HttpSession session = request.getSession();
+        Cart cart = (Cart) session.getAttribute("cart");
+        Map<String, CartItem> cartItem = cart.getCartItem();
+
+        //找到该商品并删除
+        if (cartItem.containsKey(pid)){
+            CartItem removeCartItem = cartItem.remove(pid);
+            double subTotal = removeCartItem.getSubTotal();
+            System.out.println(subTotal);
+            //修改购物车总金额
+            cart.setTotal(cart.getTotal() - subTotal);
+            session.setAttribute("cart",cart);
+        }
+
+        request.getRequestDispatcher(request.getContextPath()+"/cart.jsp").forward(request,response);
 
     }
 
