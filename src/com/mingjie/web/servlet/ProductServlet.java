@@ -1,23 +1,15 @@
 package com.mingjie.web.servlet;
 
 import com.google.gson.Gson;
-import com.mingjie.domain.Category;
-import com.mingjie.domain.PageBean;
-import com.mingjie.domain.Product;
+import com.mingjie.domain.*;
 import com.mingjie.service.CategoryListService;
 import com.mingjie.service.ProductService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @Author:Liweijian
@@ -157,4 +149,74 @@ public class ProductServlet extends BaseServlet {
         request.setAttribute("hotProductList", hotProductList);
         request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
+
+    //添加商品到购物车
+    public void addProductToCart(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        //获取商品pid和购买的数量
+        String pid = request.getParameter("pid");
+        String buyNumStr = request.getParameter("buyNum");
+        int buyNum = Integer.parseInt(buyNumStr);
+        HttpSession session = request.getSession();
+
+        //找到该商品
+        ProductService service = new ProductService();
+        Product product = service.findProductByPid(pid);
+
+        CartItem cartItem = new CartItem();
+        Cart cart = (Cart) session.getAttribute("cart");
+
+        //判断在session中是否存在购物车
+        if (cart == null){
+            cart = new Cart();
+        }
+
+        //将购物信息加入购物项
+        cartItem.setProduct(product);
+        cartItem.setNum(buyNum);
+
+        //计算小计
+        double subTotal = buyNum * product.getMarket_price();
+        cartItem.setSubTotal(subTotal);
+
+        //将购物项加入购物车
+        Map<String, CartItem> cartItemMap = cart.getCartItem();
+        CartItem oldCartItem;
+        double newSubTotal = 0.0;
+
+        if (cartItemMap.containsKey(pid)){
+            //如果该商品已在购物车
+            oldCartItem = cartItemMap.get(pid);
+
+            //修改数量
+            int oldNum = oldCartItem.getNum();
+            int newNum = oldNum + buyNum;
+            oldCartItem.setNum(newNum);
+
+            //修改小计
+            double oldSubTotal = oldCartItem.getSubTotal();
+            newSubTotal = buyNum * product.getMarket_price();
+            oldCartItem.setSubTotal(oldSubTotal+newSubTotal);
+
+
+//            oldCartItem.setNum(buyNum + cartItem.getNum());
+//            oldCartItem.setSubTotal(subTotal + cartItem.getSubTotal());
+        }else {
+            //该商品不在购物车
+            cartItem.setNum(buyNum);
+            cartItem.setSubTotal(subTotal);
+            cartItemMap.put(pid,cartItem);
+        }
+        cart.setCartItem(cartItemMap);
+
+        //计算总费用
+        double total = subTotal + cart.getTotal();
+        cart.setTotal(total);
+
+        //添加到session
+        session.setAttribute("cart",cart);
+        response.sendRedirect(request.getContextPath()+"/cart.jsp");
+
+
+    }
+
 }
