@@ -51,5 +51,14 @@
         <servlet-name>CheckImgServlet</servlet-name>
         <url-pattern>/checkImg</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CallBackServlet</servlet-name>
+        <servlet-class>com.mingjie.web.servlet.CallBackServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CallBackServlet</servlet-name>
+        <url-pattern>/callback</url-pattern>
+    </servlet-mapping>
 
 </web-app>

@@ -1,8 +1,10 @@
 package com.mingjie.service;
 
 import com.mingjie.dao.ProductDao;
+import com.mingjie.domain.Order;
 import com.mingjie.domain.PageBean;
 import com.mingjie.domain.Product;
+import com.mingjie.utils.DataSourceUtils;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -90,5 +92,57 @@ public class ProductService {
         }
 
         return product;
+    }
+
+    //提交订单
+    public void submitOrder(Order order) {
+        /*提交订单需要更新两个表，所以需要事务控制*/
+
+        ProductDao dao = new ProductDao();
+
+        //1.开启事务
+        try {
+            DataSourceUtils.startTransaction();
+            //更新Orders表
+            dao.addOrder(order);
+            //更新OrderItem表
+            dao.addOrderItem(order.getOrderItems());
+
+        } catch (SQLException e) {
+            try {
+                DataSourceUtils.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
+            e.printStackTrace();
+        }finally {
+            try {
+                //提交事务
+                DataSourceUtils.commitAndRelease();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    //更新订单信息
+    public void updateOrder(Order order) {
+
+        ProductDao dao = new ProductDao();
+        try {
+            dao.updateOrder(order);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //修改支付状态
+    public void updateOrderState(String r6_order) {
+        ProductDao dao = new ProductDao();
+        try {
+            dao.updateOrderState(r6_order);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

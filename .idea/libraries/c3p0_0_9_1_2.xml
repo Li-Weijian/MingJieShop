@@ -9,10 +9,10 @@
       <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.1.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/jstl.jar!/" />
       <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/mail.jar!/" />
-      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.0.4-bin.jar!/" />
       <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/standard.jar!/" />
       <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar!/" />
       <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/gson-2.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.45-bin.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

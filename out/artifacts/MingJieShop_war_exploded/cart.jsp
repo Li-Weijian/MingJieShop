@@ -85,9 +85,9 @@
                     赠送积分: <em style="color:#ff6600;">${cart.total/10}</em>&nbsp; 商品金额: <strong style="color:#ff6600;">￥${cart.total}元</strong>
 				</div>
 				<div style="text-align:right;margin-top:10px;margin-bottom:10px;">
-					<a href="order_info.htm" id="clear" class="clear">清空购物车</a>
-					<a href="order_info.htm">
-						<input type="submit" width="100" value="提交订单" name="submit" border="0" style="background: url('./images/register.gif') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+					<a href="${pageContext.request.contextPath}/product?method=clearCart" id="clear" class="clear">清空购物车</a>
+					<a href="${pageContext.request.contextPath}/product?method=commitOrder">
+						<input type="button" width="100" value="提交订单" name="submit" border="0" style="background: url('./images/register.gif') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 						height:35px;width:100px;color:white;">
 					</a>
 				</div>
