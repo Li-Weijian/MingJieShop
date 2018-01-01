@@ -392,7 +392,51 @@ public class ProductServlet extends BaseServlet {
         response.sendRedirect(url);
     }
 
+    //我的订单
+    public void myOrder(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 
+        HttpSession session = request.getSession();
+        User user = (User) session.getAttribute("user");
+        if (user == null){
+            response.sendRedirect("/login.jsp");
+            return;
+        }
+
+        /*目的是封装一个List<orider>传递给jsp页面*/
+        ProductService service = new ProductService();
+        //获得该用户的所有订单
+        List<Order> orderList = service.findAllOrders(user.getUid());
+        if (orderList!=null){
+            for (Order order : orderList){
+                //获得订单的oid
+                String oid = order.getOid();
+                //查询该oid下的所有订单项  mapList封装的是多个订单项和该订单项下的商品的信息
+                List<Map<String, Object>> mapList = service.findOrderItemsByOid(oid);
+                //将map转换成list<orderItem>
+                for (Map<String, Object> map : mapList){
+
+                    try {
+                        //从map中取出count，subtotal封装到OrderItem
+                        OrderItem item = new OrderItem();
+                        BeanUtils.populate(item,map);
+                        //从map中取出pimage，pname，shop_price封装到Product中
+                        Product product = new Product();
+                        BeanUtils.populate(product,map);
+                        //将product封装到orderItem中
+                        item.setProduct(product);
+                        //将orderitem封装到Order中
+                        order.getOrderItems().add(item);
+                    } catch (Exception e ) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+
+        //封装完成，将数据转发
+        request.setAttribute("orderList",orderList);
+        request.getRequestDispatcher("order_list.jsp").forward(request,response);
+    }
 
 
 

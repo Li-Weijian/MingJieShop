@@ -8,6 +8,7 @@ import com.mingjie.utils.DataSourceUtils;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author:Liweijian
@@ -144,5 +145,30 @@ public class ProductService {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    //查询指定用户的所有订单
+    public List<Order> findAllOrders(String uid) {
+
+        ProductDao dao = new ProductDao();
+        List<Order> orderList = null;
+        try {
+            return dao.findAllOrders(uid);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return orderList;
+    }
+
+    public List<Map<String, Object>> findOrderItemsByOid(String oid) {
+        ProductDao dao = new ProductDao();
+        List<Map<String, Object>> mapList = null;
+        try {
+            mapList = dao.findOrderItemsByOid(oid);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return mapList;
     }
 }

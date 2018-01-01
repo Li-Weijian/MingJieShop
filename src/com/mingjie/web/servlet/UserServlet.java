@@ -93,7 +93,13 @@ public class UserServlet extends BaseServlet {
     //用户登出
     public void logout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        session.invalidate();
+        session.removeAttribute("user");
+        //覆盖Cookie
+        Cookie cookie_username = new Cookie("cookie_username","");
+        Cookie cookie_password = new Cookie("cookie_password", "");
+        //设置持久化时间为立即过期
+        cookie_username.setMaxAge(0);
+        cookie_password.setMaxAge(0);
         response.sendRedirect(request.getContextPath() + "/login.jsp");
     }
 
