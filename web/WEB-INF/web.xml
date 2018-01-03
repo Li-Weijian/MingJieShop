@@ -60,5 +60,14 @@
         <servlet-name>CallBackServlet</servlet-name>
         <url-pattern>/callback</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>com.mingjie.web.servlet.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
 
 </web-app>
