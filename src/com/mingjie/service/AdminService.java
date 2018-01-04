@@ -72,4 +72,16 @@ public class AdminService {
         }
         return mapList;
     }
+
+    public List<Category> showAllCategory() {
+        AdminDao dao = new AdminDao();
+        List<Category> categoryList = null;
+        try {
+            categoryList = dao.showAllCategory();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return categoryList;
+    }
 }

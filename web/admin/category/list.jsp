@@ -1,4 +1,5 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <HTML>
 <HEAD>
 <meta http-equiv="Content-Language" content="zh-cn">
@@ -43,25 +44,27 @@
 							<td width="7%" align="center">编辑</td>
 							<td width="7%" align="center">删除</td>
 						</tr>
-							<tr onmouseover="this.style.backgroundColor = 'white'"
-								onmouseout="this.style.backgroundColor = '#F5FAFE';">
-								<td style="CURSOR: hand; HEIGHT: 22px" align="center"
-									width="18%">1</td>
-								<td style="CURSOR: hand; HEIGHT: 22px" align="center"
-									width="17%">手机数码</td>
-								<td align="center" style="HEIGHT: 22px"><a
-									href="${ pageContext.request.contextPath }/admin/category/edit.jsp">
-										<img
-										src="${pageContext.request.contextPath}/images/i_edit.gif"
-										border="0" style="CURSOR: hand">
-								</a></td>
+                        <c:forEach items="${categoryList}" var="category">
+                            <tr onmouseover="this.style.backgroundColor = 'white'"
+                                onmouseout="this.style.backgroundColor = '#F5FAFE';">
+                                <td style="CURSOR: hand; HEIGHT: 22px" align="center"
+                                    width="18%">${category.cid}</td>
+                                <td style="CURSOR: hand; HEIGHT: 22px" align="center"
+                                    width="17%">${category.cname}</td>
+                                <td align="center" style="HEIGHT: 22px">
+                                    <a href="${ pageContext.request.contextPath }/admin/category/edit.jsp">
+                                        <img src="${pageContext.request.contextPath}/images/i_edit.gif" border="0" style="CURSOR: hand">
+                                    </a>
+                                </td>
 
-								<td align="center" style="HEIGHT: 22px"><a
-									href="">
-										<img src="${pageContext.request.contextPath}/images/i_del.gif"
-										width="16" height="16" border="0" style="CURSOR: hand">
-								</a></td>
-							</tr>
+                                <td align="center" style="HEIGHT: 22px"><a
+                                        href="">
+                                    <img src="${pageContext.request.contextPath}/images/i_del.gif"
+                                         width="16" height="16" border="0" style="CURSOR: hand">
+                                </a></td>
+                            </tr>
+                        </c:forEach>
+
 					</table>
 				</td>
 			</tr>

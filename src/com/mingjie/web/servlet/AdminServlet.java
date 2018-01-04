@@ -83,6 +83,15 @@ public class AdminServlet extends BaseServlet {
         response.getWriter().write(s);
     }
 
+    //分类管理
+    public void showAllCategory(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        AdminService service = new AdminService();
+        List<Category> categoryList = service.showAllCategory();
+
+        request.setAttribute("categoryList",categoryList);
+        request.getRequestDispatcher("/admin/category/list.jsp").forward(request,response);
+    }
+
 
 
 

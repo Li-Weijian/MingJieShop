@@ -7,427 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="024ecde9-64fb-4799-b3fe-ab2802ac19a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mingjie/web/servlet/AdminAddProductServlet.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/c3p0-config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/dao/UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/domain/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/service/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/utils/CommonsUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/utils/DataSourceUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/utils/MD5Utils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/utils/MailUtils$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/classes/com/mingjie/utils/MailUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/lib/servlet-api.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/admin/bottom.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/admin/category/add.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/admin/category/edit.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/admin/category/list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/admin/home.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/admin/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/admin/left.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/admin/product/add.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/admin/product/edit.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/admin/product/list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/admin/top.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/admin/welcome.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/abc.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/bc.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/bcc.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/beijingnongshang.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/bh.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/bj.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/ccb.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/cib.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/cmb.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/cmbc.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/dy.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/gf.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/guangda.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/hx.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/icbc.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/nanjing.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/ningbo.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/pingan.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/post.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/sfz.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/sh.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/shpd.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/zheshang.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/bank_img/zx.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/cart.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/css/Style1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/css/dtree.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/css/left.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/footer.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/header.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/059b5245-e3c8-43bf-80fe-700f0e4e68b8-thumbnail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/4a51167a-89d5-4710-aca2-7c76edc355b8-thumbnail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/51afeef5-f6cb-4936-abea-315cfca0edc0-thumbnail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/54890cf9-91b0-40bc-9f68-51462e9c43a8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/750a9ce8-8c19-444d-b8cc-f3e7e786ec5d-thumbnail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/93b9e55f-cbae-4c3c-b2f7-2636c7369db7-thumbnail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/My97DatePicker.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/adidas.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/base64.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/beijirong.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/bigPic13867cc1-935a-4a3a-98f9-edf87ddb1c09.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/bigPic372e7faa-3ad0-444d-a89b-a8e9f0d6e929.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/bigPic4ed6edbf-fb3e-49a7-be5e-361b2ce02961.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/bigPic5ab54f67-a479-48fe-a41d-7d34b57036a3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/bigPica5720219-ba48-460a-a084-24d5b314bd03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/bigPica7e5d3dd-5984-4d0f-9851-35cc0987d9b9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/bigPicaa443d05-27b4-4964-958e-c81536f01d04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/bigPicc1e3a29e-17f5-4d9f-a186-b2c5a0b39b88.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/bigPicd0459632-fe4e-4a5d-8373-1a67c9f43ec2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/bigPice7c2e240-4147-4c11-b369-db3765ec3df9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/bigPicee0785e3-68e2-4e23-93ef-68904bc2a3c6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/captcha (2).jhtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/captcha.jhtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/cart.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/cart.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/common.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/common.css.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/common.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/dadonggua.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/datepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/eifini.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/f37ba36a-181b-4161-a88f-f74c9adb485d-thumbnail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/f5e39c37-94b2-462e-8e58-8bde3c5f1b8c-thumbnail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/footer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/g.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/h.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/header.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/hengyuanxiang.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/i.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/index_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/index_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/index_right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/index_top.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/j.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/jackjones.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/jsbn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/k.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/l.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/lining.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/login.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/login.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/logo.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/m.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/maoren.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/nike.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/o.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/p.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/product.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/product.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/q.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/r___________renleipic_01/15.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/r___________renleipic_01/bigPic139f030b-d68b-41dd-be6d-b94cc568d3c5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/r___________renleipic_01/bigPic19533252-0faa-4e64-8077-6e1908f47739.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/r___________renleipic_01/bigPic1ea8f1c9-8b8e-4262-8ca9-690912434692.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/r___________renleipic_01/bigPic5f3622b8-028a-4e62-a77f-f41a16d715ed.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/r___________renleipic_01/footer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/r___________renleipic_01/header.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/r___________renleipic_01/logo.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/r___________renleipic_01/logo1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/r___________renleipic_01/product.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/registImg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/regist_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/register.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/semir.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/sentubila.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/septwolves.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/slider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/sundance.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/vimly.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/image/yishion.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/IconTexto_WebDev_009.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/article.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/cart.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/cart1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/common.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/dialog_overlay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/error.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/finalbutton.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/gif53_029.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/i_del.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/i_edit.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/index.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/info.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/loading_bar.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/loading_icon.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/login.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/loginbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/member.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/message.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/mis_01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/mis_05a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/mis_05b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/mis_05c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/order.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/password.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/product.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/regist_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/register.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/review.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/shim.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/title2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/top_01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/top_100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/base.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/cd.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/empty.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/folder.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/folderopen.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/globe.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/imgfolder.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/join.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/joinbottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/line.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/minusbottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/musicfolder.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/nolines_minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/nolines_plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/page.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/plusbottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/question.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/images/tree/trash.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/111.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/222.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/4.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/bartlesvillecf.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/emancipation.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/emancipation2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/footer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/header.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/logo.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/logo2.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/logo3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/logo4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/okwu-athletics.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/okwu.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/img/title2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/info.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/js/dtree.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/js/jquery-1.11.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/js/jquery.validate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/order_info.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/order_list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/product_info.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/product_list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/556d64fcNf28f90d0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0001.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0002.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0003.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0004.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0005.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0006.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0007.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0008.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0009.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0010.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0011.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0012.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0013.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0014.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0015.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0016.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0017.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0018.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0019.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0020.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0021.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0022.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0023.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0024.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0025.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0026.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0027.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0028.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0029.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0030.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0031.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0032.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0033.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0034.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0035.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0036.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0037.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0038.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0039.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0040.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0041.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0042.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0043.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0044.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0045.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0046.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0047.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0048.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0049.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/c_0050.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs10001.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs10002.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs10003.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs10004.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs10005.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs10006.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs10007.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs10008.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs10009.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs10010.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs20001.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs20002.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs20003.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs20004.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs20005.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs20006.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs20007.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs20008.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs20009.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs20010.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs30001.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs30002.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs30003.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs30004.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs30005.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs30006.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs30007.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs30008.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs30009.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs30010.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs40001.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs40002.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs40003.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs40004.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs40005.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs40006.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs40007.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs40008.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs40009.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs40010.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs40011.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs50001.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs50002.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs50003.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs50004.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs50005.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs50006.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs50007.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs50008.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs50009.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs50010.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs60001.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs60002.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs60003.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs60004.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs60005.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs60006.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs60007.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs60008.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs60009.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs60010.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs70001.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs70002.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs70003.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs70004.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs70005.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs70006.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs70007.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs70008.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs70009.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/cs70010.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/duanxue1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/duanxue2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/duanxue3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/duanxue4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/1/nvxie.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/155210007679548_y.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/562d008aN963ce5f2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/5632bdf8N789e6659.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/5632c2eeNbc918af0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/90560009093007_y.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/c_0001.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/c_0002.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/c_0003.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/c_0004.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/c_0005.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/c_0006.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/c_0007.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/dn1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/dn2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/f001a62f-a49d-4a4d-b56f-2b6908a0002c_g.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/hao/ad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/hao/big01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/hao/middle01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/hao/small01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/hao/small02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/hao/small03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/hao/small04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/hao/small05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/hao/small06.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/hao/small07.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/hao/small08.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/hao/small09.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/news_left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/products/news_right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/register.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/registerFail.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/MingJieShop_war_exploded/registerSuccess.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/MingJieShop_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/MingJieShop_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mingjie/dao/AdminDao.java" afterPath="$PROJECT_DIR$/src/com/mingjie/dao/AdminDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mingjie/domain/Product.java" afterPath="$PROJECT_DIR$/src/com/mingjie/domain/Product.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mingjie/service/AdminService.java" afterPath="$PROJECT_DIR$/src/com/mingjie/service/AdminService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mingjie/web/servlet/AdminServlet.java" afterPath="$PROJECT_DIR$/src/com/mingjie/web/servlet/AdminServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/category/list.jsp" afterPath="$PROJECT_DIR$/web/admin/category/list.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/left.jsp" afterPath="$PROJECT_DIR$/web/admin/left.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/order/list.jsp" afterPath="$PROJECT_DIR$/web/admin/order/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/product/add.jsp" afterPath="$PROJECT_DIR$/web/admin/product/add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/popup_layer.css" afterPath="$PROJECT_DIR$/web/css/popup_layer.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -446,8 +31,8 @@
       <file leaf-file-name="AdminDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mingjie/dao/AdminDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="58" column="77" lean-forward="false" selection-start-line="58" selection-start-column="77" selection-end-line="58" selection-end-column="77" />
+            <state relative-caret-position="435">
+              <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -456,8 +41,8 @@
       <file leaf-file-name="AdminService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mingjie/service/AdminService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="32" />
+            <state relative-caret-position="246">
+              <caret line="81" column="12" lean-forward="false" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -465,30 +50,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminServlet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AdminServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/AdminServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+            <state relative-caret-position="426">
+              <caret line="91" column="59" lean-forward="false" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/admin/order/list.jsp">
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin/category/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="785">
-              <caret line="157" column="62" lean-forward="true" selection-start-line="157" selection-start-column="62" selection-end-line="157" selection-end-column="62" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#HTML#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#HTML#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#HTML#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#HTML#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#HTML#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#HTML#0;n#!!top" expanded="true" />
-                <marker date="1515076426538" expanded="true" signature="3230:3249" ph="..." />
-              </folding>
+            <state relative-caret-position="426">
+              <caret line="57" column="32" lean-forward="false" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -519,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/mingjie/domain/User.java" />
         <option value="$PROJECT_DIR$/src/com/mingjie/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/com/mingjie/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/com/mingjie/web/filter/AutoLoginFilter.java" />
@@ -564,12 +140,13 @@
         <option value="$PROJECT_DIR$/src/com/mingjie/domain/Product.java" />
         <option value="$PROJECT_DIR$/src/com/mingjie/web/servlet/AdminAddProductServlet.java" />
         <option value="$PROJECT_DIR$/web/admin/product/list.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/left.jsp" />
-        <option value="$PROJECT_DIR$/src/com/mingjie/service/AdminService.java" />
-        <option value="$PROJECT_DIR$/src/com/mingjie/web/servlet/AdminServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/mingjie/dao/AdminDao.java" />
         <option value="$PROJECT_DIR$/web/css/popup_layer.css" />
         <option value="$PROJECT_DIR$/web/admin/order/list.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/left.jsp" />
+        <option value="$PROJECT_DIR$/src/com/mingjie/dao/AdminDao.java" />
+        <option value="$PROJECT_DIR$/src/com/mingjie/service/AdminService.java" />
+        <option value="$PROJECT_DIR$/web/admin/category/list.jsp" />
+        <option value="$PROJECT_DIR$/src/com/mingjie/web/servlet/AdminServlet.java" />
       </list>
     </option>
   </component>
@@ -682,13 +259,7 @@
               <item name="MingJieShop" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MingJieShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MingJieShop" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -927,7 +498,7 @@
       <workItem from="1514894831762" duration="177000" />
       <workItem from="1514905900019" duration="2822000" />
       <workItem from="1514979261953" duration="6887000" />
-      <workItem from="1515067538073" duration="8916000" />
+      <workItem from="1515067538073" duration="9371000" />
     </task>
     <task id="LOCAL-00001" summary="实现登录功能">
       <created>1514042884211</created>
@@ -1027,11 +598,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514995730001</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="实现后台订单管理、订单详情弹出层、商品添加、">
+      <created>1515076498356</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1515076498356</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106597000" />
+    <option name="totallyTimeSpent" value="107052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -1109,8 +687,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/ProductInfoServlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/CategoryListServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/IndexServlet.java" />
     <entry file="file://$PROJECT_DIR$/web/default.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -1361,14 +937,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/AdminAddProductServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2514">
-          <caret line="8" column="52" lean-forward="false" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/admin/product/add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -1377,51 +945,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="16" column="64" lean-forward="true" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/left.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="31" column="99" lean-forward="false" selection-start-line="31" selection-start-column="86" selection-end-line="31" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mingjie/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/images/loading.gif">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/AdminServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mingjie/dao/AdminDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="58" column="77" lean-forward="false" selection-start-line="58" selection-start-column="77" selection-end-line="58" selection-end-column="77" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/popup_layer.css">
@@ -1437,7 +963,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/admin/order/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="785">
+        <state relative-caret-position="1145">
           <caret line="157" column="62" lean-forward="true" selection-start-line="157" selection-start-column="62" selection-end-line="157" selection-end-column="62" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#HTML#0;n#!!top" expanded="true" />
@@ -1448,6 +974,74 @@
             <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#HTML#0;n#!!top" expanded="true" />
             <marker date="1515076426538" expanded="true" signature="3230:3249" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="16" column="63" lean-forward="true" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/AdminAddProductServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/left.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="27" column="101" lean-forward="false" selection-start-line="27" selection-start-column="86" selection-end-line="27" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mingjie/dao/AdminDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mingjie/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="81" column="12" lean-forward="false" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/category/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/category/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="57" column="32" lean-forward="false" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mingjie/web/servlet/AdminServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="91" column="59" lean-forward="false" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
