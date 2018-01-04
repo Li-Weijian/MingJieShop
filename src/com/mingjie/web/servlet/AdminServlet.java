@@ -2,6 +2,7 @@ package com.mingjie.web.servlet;
 
 import com.google.gson.Gson;
 import com.mingjie.domain.Category;
+import com.mingjie.domain.Order;
 import com.mingjie.domain.Product;
 import com.mingjie.service.AdminService;
 import com.mingjie.service.ProductService;
@@ -13,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author:Liweijian
@@ -52,17 +54,34 @@ public class AdminServlet extends BaseServlet {
 
     }
 
-    //添加商品
-    public void addProductAdmin(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+    //展示所有订单
+    public void showOrderList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 
-        
+        AdminService service = new AdminService();
+        List<Order> orderList = service.findAllOrder();
 
-
-
+        request.setAttribute("orderList",orderList);
+        request.getRequestDispatcher("/admin/order/list.jsp").forward(request,response);
 
     }
 
+    //订单详情
+    public void findOrderInfoByOid(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        try {
+            Thread.sleep(2000);  //休眠两秒钟，提高用户体验
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        String oid = request.getParameter("oid");
 
+        AdminService service = new AdminService();
+        List<Map<String,Object>> mapList = service.findOrderInfoByOid(oid);
+
+        Gson gson = new Gson();
+        String s = gson.toJson(mapList);
+        response.setContentType("text/html;charset=UTF-8");  //解决乱码
+        response.getWriter().write(s);
+    }
 
 
 

@@ -3,10 +3,13 @@ package com.mingjie.service;
 import com.mingjie.dao.AdminDao;
 import com.mingjie.dao.ProductDao;
 import com.mingjie.domain.Category;
+import com.mingjie.domain.Order;
 import com.mingjie.domain.Product;
+import com.sun.org.apache.xpath.internal.operations.Or;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author:Liweijian
@@ -37,5 +40,36 @@ public class AdminService {
             e.printStackTrace();
         }
         return categoryList;
+    }
+
+    public void addProduct(Product product) {
+        AdminDao dao = new AdminDao();
+        try {
+            dao.addProduct(product);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public List<Order> findAllOrder() {
+        AdminDao dao = new AdminDao();
+        List<Order> orderList = null;
+        try {
+            orderList = dao.findAllOrder();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return orderList;
+    }
+
+    public List<Map<String,Object>> findOrderInfoByOid(String oid) {
+        AdminDao dao = new AdminDao();
+        List<Map<String,Object>> mapList = null;
+        try {
+            mapList = dao.findOrderInfoByOid(oid);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return mapList;
     }
 }

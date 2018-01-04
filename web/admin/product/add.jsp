@@ -25,9 +25,9 @@
 	</HEAD>
 	
 	<body>
-		<form id="userAction_save_do" name="Form1" action="${pageContext.request.contextPath}/admin" method="post" enctype="multipart/form-data">
+    <%--此表单为文件上传表单，之前的Servlet因继承BaseServlet不适合，因此需要重新写一个Servlet进行操作--%>
+		<form id="userAction_save_do" name="Form1" action="${pageContext.request.contextPath}/adminAddProduct" method="post" enctype="multipart/form-data">
 			&nbsp;
-            <input type="hidden" name="method" value="addProduct">
 			<table cellSpacing="1" cellPadding="5" width="100%" align="center" bgColor="#eeeeee" style="border: 1px solid #8ba7e3" border="0">
 				<tr>
 					<td class="ta_01" align="center" bgColor="#afd1f3" colSpan="4"

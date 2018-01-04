@@ -1,4 +1,5 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <HTML>
 	<HEAD>
 		<meta http-equiv="Content-Language" content="zh-cn">
@@ -20,11 +21,52 @@
 					closeBtn:"#closeBtn",
 					useOverlay:true
 				});
-				
 			});
-			
-			
-			
+
+			//订单详情
+			function findOrderInfoByOid(oid) {
+			    //清除无用的信息
+			    $("#shodDivOid").html("");
+			    $("#showDivTab").html("");
+			    //显示loading
+                $("#loading").css("display","block");
+
+                $.post(
+                    "${pageContext.request.contextPath}/admin?method=findOrderInfoByOid",
+                    {"oid":oid},
+                    function (date) {
+                        //设置oid
+                        $("#shodDivOid").html(oid);
+                        //隐藏loading
+                        $("#loading").css("display","none");
+
+                        /*[{pimage=products/1/c_0032.jpg, shop_price=6688.0, pname=Apple MacBook Air MJVE2CH/A 13.3英寸, subtotal=6788.0, count=1},
+                        {pimage=products/1/c_0010.jpg, shop_price=2599.0, pname=华为 Ascend Mate7, subtotal=2699.0, count=1}]*/
+                        var content = "<tr id='showTableTitle'>\n" +
+                            "\t\t\t\t\t\t\t<th width='20%'>图片</th>\n" +
+                            "\t\t\t\t\t\t\t<th width='25%'>商品</th>\n" +
+                            "\t\t\t\t\t\t\t<th width='20%'>价格</th>\n" +
+                            "\t\t\t\t\t\t\t<th width='15%'>数量</th>\n" +
+                            "\t\t\t\t\t\t\t<th width='20%'>小计</th>\n" +
+                            "\t\t\t\t\t\t</tr>";
+                        for (var i = 0; i < date.length; i++){
+                            content += "<tr style='text-align: center;'>\n" +
+                                "\t\t\t\t\t\t\t<td>\n" +
+                                "\t\t\t\t\t\t\t\t<img src='${pageContext.request.contextPath }/"+date[i].pimage+"' width='70' height='60'>\n" +
+                                "\t\t\t\t\t\t\t</td>\n" +
+                                "\t\t\t\t\t\t\t<td><a target='_blank'>"+date[i].pname+"</a></td>\n" +
+                                "\t\t\t\t\t\t\t<td>￥"+date[i].shop_price+"</td>\n" +
+                                "\t\t\t\t\t\t\t<td>"+date[i].count+"</td>\n" +
+                                "\t\t\t\t\t\t\t<td><span class='subtotal'>￥"+date[i].subtotal+"</span></td>\n" +
+                                "\t\t\t\t\t\t</tr>\n" +
+                                "\t\t\t\t\t\t<tr style='text-align: center;'>\n";
+                        }
+                        $("#showDivTab").html(content);
+                    },
+                    "json"
+                );
+                
+            }
 		</script>
 		
 	</HEAD>
@@ -66,34 +108,36 @@
 										订单详情
 									</td>
 								</tr>
-								<tr onmouseover="this.style.backgroundColor = 'white'"
-									onmouseout="this.style.backgroundColor = '#F5FAFE';">
-									<td style="CURSOR: hand; HEIGHT: 22px" align="center"
-										width="18%">
-										1
-									</td>
-									<td style="CURSOR: hand; HEIGHT: 22px" align="center"
-										width="17%">
-										12345
-									</td>
-									<td style="CURSOR: hand; HEIGHT: 22px" align="center"
-										width="17%">
-										300
-									</td>
-									<td style="CURSOR: hand; HEIGHT: 22px" align="center"
-										width="17%">
-										zhangsan
-									</td>
-									<td style="CURSOR: hand; HEIGHT: 22px" align="center"
-										width="17%">
-										已付款
-									</td>
-									<td align="center" style="HEIGHT: 22px">
-										<input type="button" value="订单详情" class="clickedElement" onclick="findOrderInfoByOid('fc86891e-5126-452e-932d-c4fe382ba73f')"/>
-									</td>
-					
-								</tr>
-								
+
+
+                                <c:forEach items="${orderList}" var="order" varStatus="vs">
+                                    <tr onmouseover="this.style.backgroundColor = 'white'"
+                                        onmouseout="this.style.backgroundColor = '#F5FAFE';">
+                                        <td style="CURSOR: hand; HEIGHT: 22px" align="center"
+                                            width="18%">
+                                                ${vs.count}
+                                        </td>
+                                        <td style="CURSOR: hand; HEIGHT: 22px" align="center"
+                                            width="17%">
+                                                ${order.oid}
+                                        </td>
+                                        <td style="CURSOR: hand; HEIGHT: 22px" align="center"
+                                            width="17%">
+                                                ${order.total}
+                                        </td>
+                                        <td style="CURSOR: hand; HEIGHT: 22px" align="center"
+                                            width="17%">
+                                                ${order.name}
+                                        </td>
+                                        <td style="CURSOR: hand; HEIGHT: 22px" align="center"
+                                            width="17%">
+                                                ${order.state == 0?"未付款":"已付款"}
+                                        </td>
+                                        <td align="center" style="HEIGHT: 22px">
+                                            <input type="button" value="订单详情" class="clickedElement" onclick="findOrderInfoByOid('${order.oid}')"/>
+                                        </td>
+                                    </tr>
+                                </c:forEach>
 							</table>
 						</td>
 					</tr>
@@ -104,45 +148,20 @@
 		
 		<!-- 弹出层 HaoHao added -->
         <div id="showDiv" class="blk" style="display:none;">
-            <div class="main">
+            <div class="main" style="height: 400px;">
                 <h2>订单编号：<span id="shodDivOid" style="font-size: 13px;color: #999">123456789</span></h2>
                 <a href="javascript:void(0);" id="closeBtn" class="closeBtn">关闭</a>
                 <div id="loading" style="padding-top:30px;text-align: center;">
-                	<img alt="" src="${pageContext.request.contextPath }/images/loading.gif">
+                	<img alt="" style="width: 50%;" src="${pageContext.request.contextPath }/images/loading.gif">
                 </div>
 				<div style="padding:20px;">
 					<table id="showDivTab" style="width:100%">
-						<tr id='showTableTitle'>
-							<th width='20%'>图片</th>
-							<th width='25%'>商品</th>
-							<th width='20%'>价格</th>
-							<th width='15%'>数量</th>
-							<th width='20%'>小计</th>
-						</tr>
-						<tr style='text-align: center;'>
-							<td>
-								<img src='${pageContext.request.contextPath }/products/1/c_0014' width='70' height='60'>
-							</td>
-							<td><a target='_blank'>电视机</a></td>
-							<td>￥3000</td>
-							<td>3</td>
-							<td><span class='subtotal'>￥9000</span></td>
-						</tr>
-						<tr style='text-align: center;'>
-							<td>
-								<img src='${pageContext.request.contextPath }/products/1/c_0014' width='70' height='60'>
-							</td>
-							<td><a target='_blank'>电视机</a></td>
-							<td>￥3000</td>
-							<td>3</td>
-							<td><span class='subtotal'>￥9000</span></td>
-						</tr>
-						
-						
+
+
 					</table>
 				</div>
             </div>
-            
+
         </div>
 		
 		

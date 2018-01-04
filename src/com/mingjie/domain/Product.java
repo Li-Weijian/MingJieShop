@@ -29,7 +29,15 @@ public class Product {
     private int is_hot;
     private String pdesc;
     private int pflag;
-    private String cid;
+    private Category category;
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 
     public void setPid(String pid) {
         this.pid = pid;
@@ -65,10 +73,6 @@ public class Product {
 
     public void setPflag(int pflag) {
         this.pflag = pflag;
-    }
-
-    public void setCid(String cid) {
-        this.cid = cid;
     }
 
     public String getPid() {
@@ -107,7 +111,4 @@ public class Product {
         return pflag;
     }
 
-    public String getCid() {
-        return cid;
-    }
 }

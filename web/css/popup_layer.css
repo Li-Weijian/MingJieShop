@@ -10,7 +10,7 @@ h1{color:#85B6E2;text-align:center;padding-top:20px;font-size:18px;}
 /* blk */
 .blk{width:700px;height:300px;position:relative;}
 
-.blk .main{height:300px;overflow:auto; border-left:2px solid #85B6E2;border-right:2px solid #85B6E2;position:relative;background:#fff;border:2px solid #AFD1F3;border-radius:8px;}
+.blk .main{height:400px;overflow:auto; border-left:2px solid #85B6E2;border-right:2px solid #85B6E2;position:relative;background:#fff;border:2px solid #AFD1F3;border-radius:8px;}
 .blk .main h2{font:bold 16px "Microsoft YaHei";padding:10px 20px 2px;color:#85B6E2;}
 
 

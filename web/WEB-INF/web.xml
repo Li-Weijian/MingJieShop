@@ -69,5 +69,13 @@
         <servlet-name>AdminServlet</servlet-name>
         <url-pattern>/admin</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminAddProductServlet</servlet-name>
+        <servlet-class>com.mingjie.web.servlet.AdminAddProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminAddProductServlet</servlet-name>
+        <url-pattern>/adminAddProduct</url-pattern>
+    </servlet-mapping>
 
 </web-app>
